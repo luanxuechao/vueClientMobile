@@ -1,0 +1,100 @@
+@charset "utf-8"
+
+/*
+ *	cambio通用颜色和样式变量
+ *
+ */
+
+//颜色
+$theme-color:				#54D1DD !default
+$theme-bright:				#31E3E9 !default
+$theme-dark:				#4FC6CE !default
+
+$transition-color:			#54BDDD !default
+$alert-color:				#ff6483 !default
+
+$main-grey:					#444	!default
+$secondary-grey:			#d0d0d0 !default
+$split-grey:				#E4E4E6 !default
+$bg-grey:					#f8f8f8 !default
+$tabs-grey:					#fcfcfc !default
+$tabs-active:       #09BB07  !default
+
+$text-consultant-color:		#66E3CA !default
+$audio-consultant-color:	#EF9476 !default
+$video-consultant-color:	#EE70CA !default
+$offline-consultant-color:	#489EE4 !default
+
+//vueChat底部tabs
+.vueChat-tabs
+	border-color: $split-grey
+	background-color: $tabs-grey
+	background-image: none
+
+//vueChat-header
+.bar-vueChat
+	background: rgba(#fff,0) !important
+	.bar-vueChat-text
+		color: #000
+//.bar-vueChat-transparent
+
+
+//ionic slider-box 复写
+.slider-pager
+	bottom: 10px
+	.slider-pager-page
+		color: rgba(#000, 0.8)
+		&.active
+			color: #fff
+	.icon
+		font-size: 13px
+
+
+//vueChat通用的大按钮，参数（宽，高，按钮颜色）
+@mixin vueChat-button($width,$height,$background-color)
+	@include size($width,$height)
+	border-radius: $height / 2 + px
+	background: $background-color
+	text-align: center
+	line-height: $height + px
+
+//vueChat自制的数字键盘，可以用在需要的地方
+.keybord
+	position: fixed
+	bottom: 0
+	display: flex
+	flex-flow: row wrap
+	align-content: flex-start
+	width: 100%
+	height: 200px
+	background: #D1D5DB
+	.keybord-row
+		box-sizing: border-box
+		background-color: white
+		flex: 0 0 33.33333%
+		height: 50px
+		border: 1px solid darken($bg-grey, 4)
+		text-align: center
+		line-height: 50px
+		color: $main-grey
+		font-size: 22px
+		font-weight: 500
+	.disable-keybord
+		background: #d1d5db
+		> i
+			position: relative
+			bottom: 4px
+			font-size: 30px !important
+
+
+//top bar 左右两边按钮
+.button-vueChat
+	border-color: transparent
+	background: 0 0
+	box-shadow: none
+	color: #000 !important
+
+
+
+
+

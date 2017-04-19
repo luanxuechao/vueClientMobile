@@ -1,0 +1,100 @@
+@charset "utf-8"
+
+/* 尺寸 */
+@mixin size($size...)
+	$size: if(length($size) > 0, $size, auto)
+	$width: nth($size, 1)
+	$height: nth($size, length($size))
+	@if $width != auto
+		$width: if(unitless($width), $width + px, $width)
+	@if $height != auto
+		$height: if(unitless($height), $height + px, $height)
+	width: $width
+	height: $height
+
+/* px / rem */
+@mixin px-rem($property,$px-values,$baseline-px:16px)
+	$baseline-rem: $baseline-px / 1em * 1
+	@if type-of($px-values) == 'number'
+		#{$property}: $px-values / $baseline-rem
+	@else
+		$rem-values: ()
+		@each $value in $px-values
+			@if $value == 0 or type-of($value) != 'number'
+				$rem-values: append($rem-values, $value / $baseline-rem)
+		#{$property}: $rem-values
+
+/* 前缀 */
+@mixin prefix($prefix,$prefixValue)
+	#{$prefix}: $prefixValue
+	-webkit-#{$prefix}: $prefixValue
+
+/* 响应式 */
+@mixin iphone5()
+	@media screen and (max-width: 320px)
+		@content
+
+@mixin iphone7p()
+	@media screen and (min-width: 412px)
+		@content
+
+@mixin screenBoth($minValue,$maxValue)
+	@media screen and (min-width: $minValue + px) and (max-width: $maxValue + px)
+		@content
+
+@mixin screenMin($minValue)
+	@media screen and (min-width: $minValue + px)
+		@content
+
+@mixin screenMax($maxValue)
+	@media screen and (max-width: $maxValue + px)
+		@content
+
+/* 定位 */
+@mixin position($position,$value)
+	@each $o in top, right, bottom, left
+		$i: index($value, $o)
+		@if $i and $i + 1 <= length($value) and type-of(nth($value, $i + 1)) == number
+			#{$o}: if(unit(nth($value, $i +1)) == '%', nth($value, $i +1), nth($value, $i +1) +px)
+	position: $position
+
+/* 三角形 */
+@mixin triangle($direction,$triangleWidth,$triangleHeight,$triangleColor)
+	@include size(0)
+	@if $direction == top
+		border:
+			left: $triangleWidth solid transparent
+			right: $triangleWidth solid transparent
+			bottom: $triangleHeight solid $triangleColor
+	@else if $direction == right
+		border:
+			top: $triangleWidth solid transparent
+			left: $triangleHeight solid $triangleColor
+			bottom: $triangleWidth solid transparent
+	@else if $direction == down
+		border:
+			left: $triangleWidth solid transparent
+			right: $triangleWidth solid transparent
+			top: $triangleHeight solid $triangleColor
+	@else if $direction == left
+		border:
+			top: $triangleWidth solid transparent
+			right: $triangleHeight solid $triangleColor
+			bottom: $triangleWidth solid transparent
+
+/* 单行文本溢出显示省略号） */
+@mixin singleTextOverflows()
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	word-wrap: break-word
+	display: block
+
+/* 多行文本溢出显示省略号，参数（行数）*/
+@mixin multiTextOverflows($width, $line)
+	overflow: hidden
+	@include prefix(box-orient,vertical)
+	@include prefix(line-clamp,$line)
+	display: -webkit-box
+
+

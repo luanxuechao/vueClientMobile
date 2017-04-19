@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* 引入cambio通用模块 */
+/*	cambio通用颜色和样式变量
+ *
+ */
+.vueChat-tabs {
+  border-color: #E4E4E6;
+  background-color: #fcfcfc;
+  background-image: none; }
+
+.bar-vueChat {
+  background: rgba(255, 255, 255, 0) !important; }
+  .bar-vueChat .bar-vueChat-text {
+    color: #000; }
+
+.slider-pager {
+  bottom: 10px; }
+  .slider-pager .slider-pager-page {
+    color: rgba(0, 0, 0, 0.8); }
+    .slider-pager .slider-pager-page.active {
+      color: #fff; }
+  .slider-pager .icon {
+    font-size: 13px; }
+
+.keybord {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 100%;
+  height: 200px;
+  background: #D1D5DB; }
+  .keybord .keybord-row {
+    box-sizing: border-box;
+    background-color: white;
+    flex: 0 0 33.33333%;
+    height: 50px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    line-height: 50px;
+    color: #444;
+    font-size: 22px;
+    font-weight: 500; }
+  .keybord .disable-keybord {
+    background: #d1d5db; }
+    .keybord .disable-keybord > i {
+      position: relative;
+      bottom: 4px;
+      font-size: 30px !important; }
+
+.button-vueChat {
+  border-color: transparent;
+  background: 0 0;
+  box-shadow: none;
+  color: #000 !important; }
+
+/* 尺寸 */
+/* px / rem */
+/* 前缀 */
+/* 响应式 */
+/* 定位 */
+/* 三角形 */
+/* 单行文本溢出显示省略号） */
+/* 多行文本溢出显示省略号，参数（行数） */
+/* 底部tab栏 和 底部的tab-icon */
+.tabs-icon {
+  color: #999; }
+  .tabs-icon i {
+    font-size: 20px !important; }
+
+.tabs-icon-active {
+  color: #4FC6CE; }
+
+/*咨询室的列表 */
+.chatroom-bg {
+  background: #f8f8f8 !important; }
+
+.chatroom {
+  width: 100%;
+  height: auto; }
+  .chatroom .chatroom-list {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding: 13px 20px 0 110px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #efefef; }
+    .chatroom .chatroom-list .chatroom-face {
+      top: 16px;
+      left: 20px;
+      position: absolute;
+      width: 50px;
+      height: 50px; }
+    .chatroom .chatroom-list .chatroom-status {
+      top: 16px;
+      left: 71px;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      background: #ff6483;
+      border-radius: 100%;
+      text-align: center; }
+      .chatroom .chatroom-list .chatroom-status > span {
+        color: #fff;
+        line-height: 17px;
+        font-size: 12px; }
+    .chatroom .chatroom-list .chatroom-basic {
+      overflow: hidden;
+      width: 100%;
+      height: 40px;
+      line-height: 40px; }
+      .chatroom .chatroom-list .chatroom-basic .name {
+        float: left;
+        color: #54D1DD;
+        font-size: 14px; }
+      .chatroom .chatroom-list .chatroom-basic .time {
+        top: 16px;
+        left: 320px;
+        position: absolute;
+        float: right;
+        font-size: 14px;
+        color: #6a6a6a; }
+    .chatroom .chatroom-list .chatroom-message {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: break-word;
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+      width: 60%;
+      color: #848484; }
+
+.vueChat-panel {
+  background-color: #FFFFFF;
+  position: relative; }
+  .vueChat-panel .panel__hd {
+    padding: 2px 4px 2px 10px;
+    font-size: 13px;
+    color: #A7A7A7;
+    position: relative;
+    background-color: #EBEBEB; }
+  .vueChat-panel .panel__bd {
+    height: 60px;
+    width: 100%; }
+    .vueChat-panel .panel__bd .panel_text {
+      height: 60px;
+      width: 100%;
+      position: relative;
+      margin: auto 10px;
+      border-bottom: 1px solid #eeeeee; }
+      .vueChat-panel .panel__bd .panel_text > img {
+        top: 5px;
+        left: 10px;
+        position: absolute;
+        width: 50px;
+        height: 50px; }
+      .vueChat-panel .panel__bd .panel_text > span {
+        top: 15px;
+        left: 80px;
+        position: absolute;
+        color: #54D1DD; }
+
+.addressList_bd {
+  width: 100%;
+  height: 600px;
+  overflow-y: auto; }
+
+/*# sourceMappingURL=main.css.map */

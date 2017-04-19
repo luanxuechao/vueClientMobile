@@ -1,0 +1,53 @@
+@charset "utf-8"
+
+/*咨询室的列表*/
+
+//判断内容块级颜色
+.chatroom-bg
+	background: $bg-grey !important
+
+.chatroom
+	@include size(percentage(1), auto)
+	//咨询师列表块级内容
+	.chatroom-list
+		position: relative
+		@include size(percentage(1), 70)
+		padding: 13px 20px 0 110px
+		background: #fbfbfb
+		border-bottom: 1px solid #efefef
+		//咨询师头像
+		.chatroom-face
+			@include position(absolute, top 16 left 20)
+			@include size(50)
+		//咨询室未读消息
+		.chatroom-status
+			@include position(absolute, left 71 top 16)
+			@include size(17)
+			background: $alert-color
+			border-radius: 100%
+			text-align: center
+			> span
+				color: #fff
+				line-height: 17px
+				font-size: 12px
+		//咨询室的名称和咨询时间
+		.chatroom-basic
+			overflow: hidden
+			@include size(percentage(1), 40)
+			line-height: 40px
+			.name
+				float: left
+				color: $theme-color
+				font-size: 14px
+			.time
+				@include position(absolute, left 320 top 16)
+				float: right
+				font-size: 14px
+				color: darken($secondary-grey, 40)
+		//咨询室最后一条聊天记录
+		.chatroom-message
+			@include singleTextOverflows()
+			margin-top: 5px
+			font-size: 12px
+			width: 60%
+			color: darken($secondary-grey, 30)
