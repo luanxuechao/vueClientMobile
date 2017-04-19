@@ -5,8 +5,11 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import Router from  './router/index'
+import  { ToastPlugin } from 'vux'
 
+Vue.use(ToastPlugin)
 Vue.use(VueRouter)
+
 
 // const routes = [{
 //   path: '/',
