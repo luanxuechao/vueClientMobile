@@ -1,11 +1,12 @@
 <template>
 	<div class="vueChat-panel">
 		<div class="panel__hd" v-if="header"  v-html="header"></div>
-		<div class="weui-panel__bd">
 			<template v-if="type == 1">
 				<div class="chatroom">
 					<div class="chatroom-list" v-for="chatRoom in list">
-						<img class="chatroom-face" src="../assets/1.jpeg">
+						<div class="chatroom-face">
+							<img src="../assets/1.jpeg" />
+						</div>
 						<div class="chatroom-status" v-if="chatRoom.title > 0">
 							<span >{{chatRoom.count}}</span>
 						</div>
@@ -28,7 +29,6 @@
 				</a>
 			</template>
 		</div>
-	</div>
 </template>
 
 

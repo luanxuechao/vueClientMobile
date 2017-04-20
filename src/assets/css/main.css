@@ -72,27 +72,32 @@
 .tabs-icon-active {
   color: #4FC6CE; }
 
-/*咨询室的列表 */
+/*咨询室的列表*/】 */
+@media screen and (min-width: 412px) {
+  .chatroom {
+    height: 736px !important; } }
 .chatroom-bg {
   background: #f8f8f8 !important; }
 
 .chatroom {
   width: 100%;
-  height: 580px;
+  height: 600px;
   overflow-y: auto; }
   .chatroom .chatroom-list {
     position: relative;
     width: 100%;
     height: 70px;
-    padding: 13px 20px 0 110px;
     background: #fbfbfb;
     border-bottom: 1px solid #efefef; }
     .chatroom .chatroom-list .chatroom-face {
       top: 16px;
       left: 20px;
       position: absolute;
-      width: 50px;
-      height: 50px; }
+      width: 20%;
+      height: 70px; }
+      .chatroom .chatroom-list .chatroom-face > img {
+        width: 50px;
+        height: 50px; }
     .chatroom .chatroom-list .chatroom-status {
       top: 16px;
       left: 71px;
@@ -108,21 +113,25 @@
         font-size: 12px; }
     .chatroom .chatroom-list .chatroom-basic {
       overflow: hidden;
-      width: 100%;
+      width: 80%;
       height: 40px;
+      top: 10px;
+      left: 80px;
+      position: absolute;
       line-height: 40px; }
       .chatroom .chatroom-list .chatroom-basic .name {
-        float: left;
         color: #54D1DD;
         font-size: 14px; }
       .chatroom .chatroom-list .chatroom-basic .time {
-        top: 16px;
-        left: 320px;
+        top: 0px;
+        right: 10px;
         position: absolute;
-        float: right;
         font-size: 14px;
         color: #6a6a6a; }
     .chatroom .chatroom-list .chatroom-message {
+      top: 40px;
+      left: 80px;
+      position: absolute;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -173,19 +182,21 @@
   overflow-y: auto; }
 
 .addressList_sidebar {
-  top: 55px;
-  left: 350px;
+  top: 60px;
+  right: 30px;
   position: absolute;
-  float: right;
-  width: 15px;
+  width: 18px;
   background: #FF9900;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   background: rgba(238, 238, 238, 0.5); }
   .addressList_sidebar > span {
     height: 22px;
     display: block; }
 
+@media screen and (min-width: 412px) {
+  .mine {
+    height: 736px !important; } }
 .mine {
   position: relative;
   background: #EBEBEB;

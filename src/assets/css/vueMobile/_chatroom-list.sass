@@ -1,6 +1,9 @@
 @charset "utf-8"
 
-/*咨询室的列表*/
+/*咨询室的列表*/】
+@include iphone7p
+	.chatroom
+		height: 736px !important
 
 //判断内容块级颜色
 .chatroom-bg
@@ -9,20 +12,20 @@
 .chatroom
 	//@include size(percentage(1), auto)
 	width: 100%
-	height: 580px
+	height: 600px
 	overflow-y: auto
 	//咨询师列表块级内容
 	.chatroom-list
 		position: relative
 		@include size(percentage(1), 70)
-		padding: 13px 20px 0 110px
 		background: #fbfbfb
 		border-bottom: 1px solid #efefef
-
 		//咨询师头像
 		.chatroom-face
 			@include position(absolute, top 16 left 20)
-			@include size(50)
+			@include size(20%,70)
+			>img
+				@include size(50)
 		//咨询室未读消息
 		.chatroom-status
 			@include position(absolute, left 71 top 16)
@@ -37,19 +40,19 @@
 		//咨询室的名称和咨询时间
 		.chatroom-basic
 			overflow: hidden
-			@include size(percentage(1), 40)
+			@include size(80%, 40)
+			@include position(absolute,top 10 left 80)
 			line-height: 40px
 			.name
-				float: left
 				color: $theme-color
 				font-size: 14px
 			.time
-				@include position(absolute, left 320 top 16)
-				float: right
+				@include position(absolute, top 0 right 10 )
 				font-size: 14px
 				color: darken($secondary-grey, 40)
 		//咨询室最后一条聊天记录
 		.chatroom-message
+			@include position(absolute, top 40 left 80)
 			@include singleTextOverflows()
 			margin-top: 5px
 			font-size: 12px
