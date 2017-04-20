@@ -190,7 +190,8 @@
   position: relative;
   background: #EBEBEB;
   width: 100%;
-  height: 720px; }
+  height: 620px;
+  overflow: hidden; }
   .mine .mine_person {
     position: relative;
     background: #FFFFFF;
