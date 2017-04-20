@@ -28,7 +28,7 @@
           <i class="iconfont">&#xe64f;</i>
         </span>
         </tabbar-item>
-        <tabbar-item class="tabs-icon" :link="{path:'/'}">
+        <tabbar-item class="tabs-icon" :link="{path:'/mine'}">
           <span slot="label">我的</span>
           <span slot='icon'>
           <i class="iconfont">&#xe633;</i>

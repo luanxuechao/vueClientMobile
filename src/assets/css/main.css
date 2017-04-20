@@ -186,4 +186,149 @@
     height: 22px;
     display: block; }
 
+.mine {
+  position: relative;
+  background: #EBEBEB;
+  width: 100%;
+  height: 720px; }
+  .mine .mine_person {
+    position: relative;
+    background: #FFFFFF;
+    margin: 25px 0px;
+    width: 100%;
+    height: 90px; }
+    .mine .mine_person > img {
+      top: 12px;
+      left: 20px;
+      position: absolute;
+      width: 70px;
+      height: 70px; }
+    .mine .mine_person .mine_nickName {
+      color: #54D1DD;
+      top: 20px;
+      left: 110px;
+      position: absolute;
+      font-size: 18px; }
+    .mine .mine_person .mine_userName {
+      top: 50px;
+      left: 110px;
+      position: absolute;
+      color: #9E9E9E;
+      font-size: 16px; }
+    .mine .mine_person > i {
+      top: 25px;
+      right: 25px;
+      position: absolute;
+      font-size: 25px; }
+  .mine .mine_collection {
+    position: relative;
+    background: #FFFFFF;
+    margin: 25px 0px;
+    width: 100%;
+    height: 90px; }
+    .mine .mine_collection .mine_collect {
+      width: 100%;
+      height: 45px;
+      border-bottom: 1px solid #eeeeee; }
+      .mine .mine_collection .mine_collect > span {
+        top: 12px;
+        left: 60px;
+        position: absolute;
+        font-size: 16px;
+        text-align: center; }
+      .mine .mine_collection .mine_collect > i {
+        top: 10px;
+        left: 25px;
+        position: absolute;
+        color: #54D1DD;
+        font-size: 20px; }
+    .mine .mine_collection .mine_photo {
+      width: 100%;
+      height: 45px; }
+      .mine .mine_collection .mine_photo > span {
+        top: 57px;
+        left: 60px;
+        position: absolute;
+        font-size: 16px;
+        text-align: center; }
+      .mine .mine_collection .mine_photo > i {
+        top: 55px;
+        left: 25px;
+        position: absolute;
+        color: #54D1DD;
+        font-size: 20px; }
+  .mine .mine_bag {
+    position: relative;
+    background: #FFFFFF;
+    margin: 25px 0px;
+    width: 100%;
+    height: 90px; }
+    .mine .mine_bag .mine_money {
+      width: 100%;
+      height: 45px;
+      border-bottom: 1px solid #eeeeee; }
+      .mine .mine_bag .mine_money > span {
+        top: 12px;
+        left: 60px;
+        position: absolute;
+        font-size: 16px;
+        text-align: center; }
+      .mine .mine_bag .mine_money > i {
+        top: 10px;
+        left: 25px;
+        position: absolute;
+        color: #54D1DD;
+        font-size: 20px; }
+    .mine .mine_bag .mine_card {
+      width: 100%;
+      height: 45px; }
+      .mine .mine_bag .mine_card > span {
+        top: 57px;
+        left: 60px;
+        position: absolute;
+        font-size: 16px;
+        text-align: center; }
+      .mine .mine_bag .mine_card > i {
+        top: 55px;
+        left: 25px;
+        position: absolute;
+        color: #54D1DD;
+        font-size: 20px; }
+  .mine .mine_look {
+    position: relative;
+    background: #FFFFFF;
+    margin: 25px 0px;
+    width: 100%;
+    height: 50px; }
+    .mine .mine_look > i {
+      top: 10px;
+      left: 25px;
+      position: absolute;
+      color: #54D1DD;
+      font-size: 20px; }
+    .mine .mine_look > span {
+      top: 12px;
+      left: 60px;
+      position: absolute;
+      font-size: 16px;
+      text-align: center; }
+  .mine .mine_set {
+    position: relative;
+    background: #FFFFFF;
+    margin: 25px 0px;
+    width: 100%;
+    height: 50px; }
+    .mine .mine_set > i {
+      top: 10px;
+      left: 25px;
+      position: absolute;
+      color: #54D1DD;
+      font-size: 20px; }
+    .mine .mine_set > span {
+      top: 12px;
+      left: 60px;
+      position: absolute;
+      font-size: 16px;
+      text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
