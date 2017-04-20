@@ -5,15 +5,16 @@ import  index from '@/components/index'
 import chatRoom from '@/views/chatRooms'
 import addressList from '@/views/addressList'
 import mine from '@/views/mine'
+import find from '@/views/discover'
 
 Vue.use(Router)
 
 export default new Router({
 	routes: [
 		{
-			path: '/Hello',
-			name: 'Hello',
-			component: Hello
+			path: '/find',
+			name: '发现',
+			component: find
 		},
 		{
 			path: '/',
