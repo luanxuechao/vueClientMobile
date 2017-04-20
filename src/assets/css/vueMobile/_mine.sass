@@ -1,0 +1,105 @@
+@charset "utf-8"
+
+.mine
+	position: relative
+	background: #EBEBEB
+	@include size(100%,720px)
+	.mine_person
+		position: relative
+		background: #FFFFFF
+		margin: 25px 0px
+		@include size(100%,90px)
+		>img
+			@include position(absolute, top 12 left 20)
+			@include size(70)
+		.mine_nickName
+			color: $theme-color
+			@include position(absolute, top 20 left 110)
+			font-size: 18px
+		.mine_userName
+			@include position(absolute, top 50 left 110)
+			color: #9E9E9E
+			font-size: 16px
+		>i
+			@include position(absolute, top 25 right 25)
+			font-size: 25px
+	.mine_collection
+		position: relative
+		background: #FFFFFF
+		margin: 25px 0px
+		@include size(100%,90px)
+		.mine_collect
+			@include size(100%,45px)
+			border-bottom: 1px solid #eeeeee
+			>span
+				@include position(absolute, top 12 left 60)
+				font-size: 16px
+				text-align: center
+			>i
+				@include position(absolute, top 10 left 25)
+				color: $theme-color
+				font-size: 20px
+		.mine_photo
+			@include size(100%,45px)
+			>span
+				@include position(absolute, top 57 left 60)
+				font-size: 16px
+				text-align: center
+			>i
+				@include position(absolute, top 55 left 25)
+				color: $theme-color
+				font-size: 20px
+	.mine_bag
+		position: relative
+		background: #FFFFFF
+		margin: 25px 0px
+		@include size(100%,90px)
+		.mine_money
+			@include size(100%,45px)
+			border-bottom: 1px solid #eeeeee
+			>span
+				@include position(absolute, top 12 left 60)
+				font-size: 16px
+				text-align: center
+			>i
+				@include position(absolute, top 10 left 25)
+				color: $theme-color
+				font-size: 20px
+		.mine_card
+			@include size(100%,45px)
+			>span
+				@include position(absolute, top 57 left 60)
+				font-size: 16px
+				text-align: center
+			>i
+				@include position(absolute, top 55 left 25)
+				color: $theme-color
+				font-size: 20px
+	.mine_look
+		position: relative
+		background: #FFFFFF
+		margin: 25px 0px
+		@include size(100%,50px)
+		>i
+			@include position(absolute, top 10 left 25)
+			color: $theme-color
+			font-size: 20px
+		>span
+			@include position(absolute, top 12 left 60)
+			font-size: 16px
+			text-align: center
+
+
+	.mine_set
+		position: relative
+		background: #FFFFFF
+		margin: 25px 0px
+		@include size(100%,50px)
+		>i
+			@include position(absolute, top 10 left 25)
+			color: $theme-color
+			font-size: 20px
+		>span
+			@include position(absolute, top 12 left 60)
+			font-size: 16px
+			text-align: center
