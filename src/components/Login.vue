@@ -20,6 +20,5 @@
 				<span>注册新用户</span>
 			</div>
 		</div>
-
 	</div>
 </template>
