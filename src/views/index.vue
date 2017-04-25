@@ -34,21 +34,33 @@
         </span>
 			</tabbar-item>
 		</tabbar>
+		<popup v-model="show1" height="100%">
+			<login></login>
+		</popup>
 	</div>
-
 </template>
 <script>
-	import {Tabbar, TabbarItem, XHeader} from 'vux'
+	import {Tabbar, TabbarItem, XHeader,Popup,XSwitch,Group} from 'vux'
+	import Login from '../components/Login.vue'
 	export default {
+		data(){
+		  return{
+			  show1:false
+		  }
+		},
 		components: {
 			Tabbar,
 			TabbarItem,
 			XHeader,
+			Popup,
+			XSwitch,
+			Group,
+			Login
 		},
 		name: 'app',
-		created:function () {
+		mounted:function () {
 			if(!this.$store.state.userName){
-
+				this.show1=true;
 			}
 		}
 	}
