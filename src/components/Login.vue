@@ -4,13 +4,13 @@
 			<img src="../assets/1.jpeg"/>
 		</div>
 		<div class="login_userName">
-			<input type="text" placeholder="邮箱/手机号/账户">
+			<input type="text" v-model="userName" placeholder="邮箱/手机号/账户">
 		</div>
 		<div class="login_password">
-			<input type="password" placeholder="密码">
+			<input type="password" v-model="password" placeholder="密码">
 		</div>
 		<div class="bottom-button">
-			<button class="login-button">
+			<button class="login-button" @click="login()">
 				<span>登 录</span>
 			</button>
 			<div class="login_forget">
@@ -22,3 +22,23 @@
 		</div>
 	</div>
 </template>
+<script>
+	export default{
+		data(){
+			return{
+				userName:'',
+				password:''
+			}
+		},
+		methods: {
+			login: function () {
+				let user = {
+					userName: this.userName,
+					password: this.password
+				}
+				this.$emit('login',user);
+			}
+		}
+	}
+
+</script>

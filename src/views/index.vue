@@ -34,8 +34,8 @@
         </span>
 			</tabbar-item>
 		</tabbar>
-		<popup v-model="show1" height="100%">
-			<login></login>
+		<popup v-show="show1" :show="show1" height="100%">
+			<login @login="login"></login>
 		</popup>
 	</div>
 </template>
@@ -61,6 +61,16 @@
 		mounted:function () {
 			if(!this.$store.state.userName){
 				this.show1=true;
+			}
+		},
+		created:function () {
+			
+		},
+		methods:{
+			login:function (user) {
+				if(user!=null){
+					this.show1=false;
+				}
 			}
 		}
 	}
