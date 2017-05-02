@@ -1,4 +1,5 @@
 # vuemobile
+chatServer:https://github.com/luanxuechao/vueMobileServe.git
 
 > yes
 
