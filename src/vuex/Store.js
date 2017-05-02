@@ -7,6 +7,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state:{
-		user_name:""
+		user_name:'',
+		SERVICE_URL:'http://127.0.0.1:1337'
 	}
 })

@@ -64,7 +64,7 @@
 			}
 		},
 		created:function () {
-			
+
 		},
 		methods:{
 			login:function (user) {

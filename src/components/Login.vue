@@ -25,18 +25,33 @@
 <script>
 	export default{
 		data(){
-			return{
-				userName:'',
-				password:''
+			return {
+				userName: '',
+				password: ''
 			}
 		},
 		methods: {
 			login: function () {
+
 				let user = {
 					userName: this.userName,
 					password: this.password
 				}
-				this.$emit('login',user);
+				// 显示
+				this.$vux.loading.show({
+					text: 'Loading'
+				});
+				this.$http.post(this.$store.state.SERVICE_URL + '/user/login', user).then(response => {
+
+
+					this.$emit('login', response.data);
+					this.$vux.loading.hide()
+
+				}, response => {
+					// error callback
+					this.$vux.loading.hide()
+				});
+
 			}
 		}
 	}
