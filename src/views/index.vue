@@ -18,8 +18,8 @@
 			<tabbar-item class="tabs-icon" :link="{path:'/addressList'}">
 				<span slot="label">通讯录</span>
 				<span slot='icon'>
-          <i class="iconfont">&#xe631;</i>
-        </span>
+          			<i class="iconfont">&#xe631;</i>
+        		</span>
 			</tabbar-item>
 			<tabbar-item class="tabs-icon" :link="{path:'/find'}">
 				<span slot="label">发现</span>
@@ -40,13 +40,13 @@
 	</div>
 </template>
 <script>
-	import {Tabbar, TabbarItem, XHeader,Popup,XSwitch,Group} from 'vux'
+	import {Tabbar, TabbarItem, XHeader, Popup, XSwitch, Group} from 'vux'
 	import Login from '../components/Login.vue'
 	export default {
 		data(){
-		  return{
-			  show1:false
-		  }
+			return {
+				show1: false
+			}
 		},
 		components: {
 			Tabbar,
@@ -58,18 +58,18 @@
 			Login
 		},
 		name: 'app',
-		mounted:function () {
-			if(!this.$store.state.userName){
-				this.show1=true;
+		mounted: function () {
+			if (!this.$store.state.userName) {
+				this.show1 = true;
 			}
 		},
-		created:function () {
+		created: function () {
 
 		},
-		methods:{
-			login:function (user) {
-				if(user!=null){
-					this.show1=false;
+		methods: {
+			login: function (user) {
+				if (user != null) {
+					this.show1 = false;
 				}
 			}
 		}

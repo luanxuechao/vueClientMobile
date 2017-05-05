@@ -6,15 +6,16 @@ import addressList from '@/views/addressList'
 import mine from '@/views/mine'
 import find from '@/views/discover'
 import index from '@/views/index'
+import register from '@/views/register'
 
 Vue.use(Router)
 
 export default new Router({
 	routes: [{
-		path:'/',
-		name:'主页',
-		component:index,
-		children:[{
+		path: '/',
+		name: '主页',
+		component: index,
+		children: [{
 			path: '/find',
 			name: '发现',
 			component: find
@@ -30,10 +31,12 @@ export default new Router({
 				component: addressList
 			},
 			{
-				path:'/mine',
-				name:'我的',
-				component:mine
+				path: '/mine',
+				name: '我的',
+				component: mine
 			}]
-	},
-	]
+	}, {
+		path: '/register',
+		component: register
+	}]
 })

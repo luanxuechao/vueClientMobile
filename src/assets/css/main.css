@@ -399,7 +399,8 @@
       color: #54D1DD; }
     .login_bg .bottom-button .login_register {
       float: right;
-      margin-right: 22px;
-      color: #54D1DD; }
+      margin-right: 22px; }
+      .login_bg .bottom-button .login_register span {
+        color: #54D1DD; }
 
 /*# sourceMappingURL=main.css.map */

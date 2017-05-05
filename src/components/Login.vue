@@ -17,7 +17,9 @@
 				<span>忘记密码？</span>
 			</div>
 			<div class="login_register">
-				<span>注册新用户</span>
+				<router-link to="/register">
+					<span >注册新用户</span>
+				</router-link>
 			</div>
 		</div>
 	</div>
