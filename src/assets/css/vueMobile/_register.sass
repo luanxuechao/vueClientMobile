@@ -1,0 +1,83 @@
+@charset "utf-8"
+@include iphone7p
+.register_bd
+	height: 736px !important
+.register_hd
+	i
+		font-size: 35px
+.register_bd
+	position: relative
+	@include size(100%, 620)
+	overflow: hidden
+	.register_title
+		font-size: 25px
+		text-align: center
+		margin-top: 80px
+	.register_area
+		font-size: 16px
+		.register_area_bd
+			width: 80%
+			margin: 40px auto
+			border-bottom: 1px solid #cccccc
+			.register_area_name
+			.register_area_no
+				float: right
+	.register_mobile
+		font-size: 16px
+		margin: 40px auto
+		width: 80%
+		color: #FBF9FE
+		> input
+			@include size(100%, 45px)
+			border: none
+			outline: medium
+			font-size: 18px
+			background: #FBF9FE
+			border-bottom: 1px solid #cccccc
+			&:focus
+				border-color: $theme-color
+	.register_mobile-active
+		border-bottom: 1px solid $theme-color
+	.register_password
+		position: relative
+		font-size: 16px
+		margin: 40px auto
+		width: 80%
+		color: #FBF9FE
+		display: block
+		> input
+			@include size(100%, 45px)
+			border: none
+			outline: medium
+			font-size: 18px
+			background: #FBF9FE
+			border-bottom: 1px solid #cccccc
+
+			&:focus
+				border-color: $theme-color
+		> i
+			@include position(absolute, top 12 right 20)
+			color: #BBBBBB
+			font-size: 20px
+	.bottom-button
+		text-align: center
+		.login-button
+			display: block
+			background: $theme-color
+			@include size(80%,40px)
+			margin: 22px auto
+			color: #fff
+			border: none
+			font-size: 18px
+			font-weight: 500
+			border-radius: 50px
+			&[disabled]
+				opacity: .4
+	.bottom-span
+		margin-top: 50px
+		text-align: center
+		>span
+			font-size: 14px
+			>span
+				color: $theme-color
+
